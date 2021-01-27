@@ -1,5 +1,5 @@
-import classes from "-/NavIems.module.css";
 import NavItem from "./NavItem/NavItem";
+import classes from "./NavItems.module.css";
 
 const navItems = (props) => {
   return (

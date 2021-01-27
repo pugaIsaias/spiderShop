@@ -1,15 +1,16 @@
-import { Component } from "react";
-import About from "../../components/About/About";
-import Dashboard from "../../components/Dashboard/Dashboard";
+import React, { Component } from "react";
+import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
+import classes from "./Layout.module.css";
 
 class Layout extends Component {
   render() {
     return (
       <div>
         <Toolbar />
-        <About />
-        <Dashboard />
+        <main className={classes.Content}>{this.props.children}</main>
       </div>
     );
   }
 }
+
+export default Layout;

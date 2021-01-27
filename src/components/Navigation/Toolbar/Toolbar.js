@@ -1,4 +1,5 @@
-import classes from "-/Toolbar.module.css";
+import NavItems from "../NavItems/NavItems";
+import classes from "./Toolbar.module.css";
 
 const toolbar = (props) => {
   return (

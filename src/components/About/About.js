@@ -1,5 +1,7 @@
+import Title from "../Title/Title";
+
 const about = () => {
-  return <h1> About </h1>;
+  return <Title> About </Title>;
 };
 
 export default about;

@@ -1,5 +1,7 @@
+import Title from "../Title/Title";
+
 const dashboard = () => {
-  return <h1> Dashboard </h1>;
+  return <Title> Dashboard </Title>;
 };
 
 export default dashboard;

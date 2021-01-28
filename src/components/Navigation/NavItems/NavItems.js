@@ -6,6 +6,7 @@ const navItems = (props) => {
     <ul className={classes.NavItems}>
       <NavItem link={"/"}>Dashboard</NavItem>
       <NavItem link={"/about"}>About</NavItem>
+      <NavItem link={"/courses"}>Courses</NavItem>
     </ul>
   );
 };

@@ -5,10 +5,10 @@ import classes from "./Layout.module.css";
 class Layout extends Component {
   render() {
     return (
-      <div>
+      <>
         <Toolbar />
         <main className={classes.Content}>{this.props.children}</main>
-      </div>
+      </>
     );
   }
 }

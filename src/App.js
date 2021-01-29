@@ -7,7 +7,7 @@ import Layout from "./containers/Layout/Layout";
 
 function App() {
   return (
-    <div>
+    <>
       <Layout>
         <Switch>
           <Route path="/about" component={About} />
@@ -15,7 +15,7 @@ function App() {
           <Route path="/courses" component={Courses} />
         </Switch>
       </Layout>
-    </div>
+    </>
   );
 }
 

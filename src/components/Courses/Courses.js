@@ -20,8 +20,6 @@ const Courses = () => {
     },
   ]);
 
-  console.log("Course List", courseList);
-
   return (
     <>
       <Title> Courses </Title>

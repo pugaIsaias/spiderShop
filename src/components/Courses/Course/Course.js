@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
-const course = (props) => {
+const Course = (props) => {
+  const useLocalState = (localItem) => {
+    const [loc, setState] = useState(localStorage.getItem(localItem));
+
+    const setLoc = (newItem) => {
+      localStorage.setItem(localItem, JSON.stringify(newItem));
+      setState(newItem);
+    };
+
+    return [loc, setLoc];
+  };
+
+  const [cart, setCart] = useLocalState("cart");
+
   return (
     <li
       style={{
@@ -13,9 +26,9 @@ const course = (props) => {
       <h3>{props.name}</h3>
       <p>{props.description}</p>
       <p>{props.price}</p>
-      <button>BUY</button>
+      <button onClick={() => setCart(props)}>BUY</button>
     </li>
   );
 };
 
-export default course;
+export default Course;

@@ -15,7 +15,7 @@ const Courses = () => {
       id: 1,
       name: "curso de bartender",
       description: "aprende a hacer 3 tipos de tragos diferentes",
-      price: "Q25",
+      price: "Q35",
       link: "/3576",
     },
   ]);

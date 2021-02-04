@@ -1,18 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Course = (props) => {
-  const useLocalState = (localItem) => {
-    const [loc, setState] = useState(localStorage.getItem(localItem));
-
-    const setLoc = (newItem) => {
-      localStorage.setItem(localItem, JSON.stringify(newItem));
-      setState(newItem);
-    };
-
-    return [loc, setLoc];
+  const addToCart = (newItem) => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(newItem);
+    localStorage.setItem("cart", JSON.stringify(cart));
   };
-
-  const [cart, setCart] = useLocalState("cart");
 
   return (
     <li
@@ -26,7 +19,7 @@ const Course = (props) => {
       <h3>{props.name}</h3>
       <p>{props.description}</p>
       <p>{props.price}</p>
-      <button onClick={() => setCart(props)}>BUY</button>
+      <button onClick={() => addToCart(props)}>BUY</button>
     </li>
   );
 };

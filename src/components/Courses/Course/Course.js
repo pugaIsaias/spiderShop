@@ -2,7 +2,13 @@ import React from "react";
 
 const course = (props) => {
   return (
-    <li>
+    <li
+      style={{
+        borderStyle: "solid",
+        listStyleType: "none",
+        paddingBottom: "2rem",
+      }}
+    >
       {/*<img src={props.image} >*/}
       <h3>{props.name}</h3>
       <p>{props.description}</p>

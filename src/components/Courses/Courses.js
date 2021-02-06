@@ -1,9 +1,21 @@
+import axios from "axios";
 import React, { useState } from "react";
 import Title from "../Title/Title";
 import Course from "./Course/Course";
 
 const Courses = () => {
-  const [courseList, setCourseList] = useState([
+  const [courseList, setCourseList] = useState([]);
+
+  axios
+    .get("https://jsonplaceholder.typicode.com/photos/")
+    .then((response) => {
+      let products = response.data.filter((data) => data.id < 10);
+    })
+    .catch((error) => {
+      console.log("axios error:", error);
+    });
+
+  /* const [courseList, setCourseList] = useState([
     {
       id: 0,
       name: "taller 5 lenguajes del amor",
@@ -22,7 +34,7 @@ const Courses = () => {
         "https://firebasestorage.googleapis.com/v0/b/rotaract-metropoli-gt.appspot.com/o/coctails.png?alt=media&token=2c6f3536-5d7c-4bc8-95db-e29ddb6b25c7",
       link: "/3576",
     },
-  ]);
+  ]);*/
 
   return (
     <>

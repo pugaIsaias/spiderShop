@@ -1,13 +1,13 @@
-import axios from "axios";
 import React, { useState } from "react";
 import Title from "../Title/Title";
+import axios from "./axios";
 import Course from "./Course/Course";
 
 const Courses = () => {
   const [courseList, setCourseList] = useState([]);
 
   axios
-    .get("https://jsonplaceholder.typicode.com/photos/")
+    .get()
     .then((response) => {
       let filterData = response.data.filter((data) => data.id < 10);
       let photos = [];

@@ -15,7 +15,7 @@ const Course = (props) => {
         paddingBottom: "2rem",
       }}
     >
-      {/*<img src={props.image} >*/}
+      <img src={props.banner} />
       <h3>{props.name}</h3>
       <p>{props.description}</p>
       <p>{props.price}</p>

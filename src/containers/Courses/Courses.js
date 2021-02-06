@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Title from "../Title/Title";
-import Course from "./Course/Course";
+import Course from "../../components/Course/Course";
+import Title from "../../components/Title/Title";
 
 const Courses = () => {
   const [courseList, setCourseList] = useState([

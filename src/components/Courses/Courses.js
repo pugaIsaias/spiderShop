@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Title from "../Title/Title";
 import axios from "./axios";
 import Course from "./Course/Course";
+import classes from "./Courses.module.css";
 
 const Courses = () => {
   const [courseList, setCourseList] = useState([]);
@@ -32,16 +33,18 @@ const Courses = () => {
     <>
       <Title> Courses </Title>
 
-      {courseList.map((course) => (
-        <Course
-          key={course.id}
-          name={course.name}
-          description={course.description}
-          price={course.price}
-          banner={course.banner}
-          link={course.link}
-        />
-      ))}
+      <div className={classes.Gallery}>
+        {courseList.map((course) => (
+          <Course
+            key={course.id}
+            name={course.name}
+            description={course.description}
+            price={course.price}
+            banner={course.banner}
+            link={course.link}
+          />
+        ))}
+      </div>
     </>
   );
 };

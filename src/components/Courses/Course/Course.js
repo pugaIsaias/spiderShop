@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./Course.module.css";
 
 const Course = (props) => {
   const addToCart = (newItem) => {
@@ -8,19 +9,13 @@ const Course = (props) => {
   };
 
   return (
-    <li
-      style={{
-        borderStyle: "solid",
-        listStyleType: "none",
-        paddingBottom: "2rem",
-      }}
-    >
+    <div className={classes.Card}>
       <img src={props.banner} />
       <h3>{props.name}</h3>
       <p>{props.description}</p>
       <p>{props.price}</p>
       <button onClick={() => addToCart(props)}>BUY</button>
-    </li>
+    </div>
   );
 };
 

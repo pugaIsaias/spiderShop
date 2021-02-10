@@ -1,0 +1,12 @@
+.Card {
+  align-self: stretch;
+  border-style: solid;
+  padding: 1em;
+  margin-bottom: 1em;
+  flex: 1;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}

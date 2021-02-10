@@ -12,7 +12,7 @@ const Courses = () => {
       let filterData = response.data.filter((data) => data.id < 10);
       let photos = [];
 
-      filterData.forEach((element) => {
+      filterData.map((element) => {
         let fragment = {};
         fragment.id = element.id;
         fragment.name = element.title;

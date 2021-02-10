@@ -7,7 +7,7 @@ const Courses = () => {
   const [courseList, setCourseList] = useState([]);
 
   axios
-    .get()
+    .get("photos/")
     .then((response) => {
       let filterData = response.data.filter((data) => data.id < 10);
       let photos = [];

@@ -13,7 +13,8 @@ const Course = (props) => {
       <img src={props.banner} alt="" />
       <h3>{props.name}</h3>
       <p>{props.description}</p>
-      <div className={classes.anchorBottom}>
+
+      <div>
         <p>{"Q" + props.price}</p>
         <button onClick={() => addToCart(props)}>BUY</button>
       </div>

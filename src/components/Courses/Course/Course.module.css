@@ -1,12 +1,16 @@
 .card {
-  border-style: solid;
   padding: 1em;
+  margin: 0 1em;
   margin-bottom: 1em;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  filter: drop-shadow(-4px 4px 8px rgba(0, 0, 0, 0.5)),
+    drop-shadow(4px -4px 8px rgba(0, 0, 0, 0.75));
 }
 
 img {

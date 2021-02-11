@@ -9,12 +9,14 @@ const Course = (props) => {
   };
 
   return (
-    <div className={classes.Card}>
-      <img src={props.banner} />
+    <div className={classes.card}>
+      <img src={props.banner} alt="" />
       <h3>{props.name}</h3>
       <p>{props.description}</p>
-      <p>{props.price}</p>
-      <button onClick={() => addToCart(props)}>BUY</button>
+      <div className={classes.anchorBottom}>
+        <p>{"Q" + props.price}</p>
+        <button onClick={() => addToCart(props)}>BUY</button>
+      </div>
     </div>
   );
 };

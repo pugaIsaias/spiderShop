@@ -2,8 +2,8 @@
   padding: 1em;
   margin: 0 1em;
   margin-bottom: 1em;
-  flex: 1;
   display: flex;
+  width: 14.0625rem;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;

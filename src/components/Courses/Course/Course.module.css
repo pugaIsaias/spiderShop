@@ -1,6 +1,5 @@
 .card {
   padding: 1em;
-  margin: 0 1em;
   margin-bottom: 1em;
   display: flex;
   width: 14.0625rem;
@@ -11,6 +10,12 @@
   border-radius: 30px;
   filter: drop-shadow(-4px 4px 8px rgba(0, 0, 0, 0.5)),
     drop-shadow(4px -4px 8px rgba(0, 0, 0, 0.75));
+}
+
+.card h3 {
+  word-wrap: break-word;
+  width: 150px;
+  margin: 0 auto;
 }
 
 img {

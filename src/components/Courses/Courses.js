@@ -8,7 +8,7 @@ const Courses = () => {
   const [courseList, setCourseList] = useState([]);
 
   axios
-    .get("photos/")
+    .get("courses/")
     .then((response) => {
       let filterData = response.data.filter((data) => data.id < 10);
       let photos = [];
@@ -16,10 +16,10 @@ const Courses = () => {
       filterData.map((element) => {
         let fragment = {};
         fragment.id = element.id;
-        fragment.name = element.title;
-        fragment.price = element.id + 10;
-        fragment.banner = element.thumbnailUrl;
-        fragment.link = element.id;
+        fragment.name = element.name;
+        fragment.price = element.price;
+        fragment.banner = element.banner;
+        fragment.link = element.link;
         photos.push(fragment);
       });
 

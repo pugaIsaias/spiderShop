@@ -13,7 +13,7 @@ const Courses = () => {
       let receiveData = response.data;
       let courseData = [];
 
-      receiveData.map((element) => {
+      receiveData.forEach((element) => {
         let fragment = {};
         fragment.id = element.id;
         fragment.name = element.name;

@@ -10,20 +10,20 @@ const Courses = () => {
   axios
     .get("courses/")
     .then((response) => {
-      let filterData = response.data.filter((data) => data.id < 10);
-      let photos = [];
+      let receiveData = response.data;
+      let courseData = [];
 
-      filterData.map((element) => {
+      receiveData.map((element) => {
         let fragment = {};
         fragment.id = element.id;
         fragment.name = element.name;
         fragment.price = element.price;
         fragment.banner = element.banner;
         fragment.link = element.link;
-        photos.push(fragment);
+        courseData.push(fragment);
       });
 
-      setCourseList(photos);
+      setCourseList(courseData);
     })
     .catch((error) => {
       console.log("axios error:", error);

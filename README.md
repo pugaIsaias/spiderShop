@@ -1,3 +1,7 @@
+# About the this web store app
+
+The front end API for the [spiderShop](https://github.com/pugaIsaias/spiderShop-API). The joke is that it's a webshop.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

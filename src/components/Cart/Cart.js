@@ -1,7 +1,7 @@
 import Title from "../Title/Title";
 
-const about = () => {
-  return <Title> About </Title>;
+const cart = () => {
+  return <Title> Cart </Title>;
 };
 
-export default about;
+export default cart;

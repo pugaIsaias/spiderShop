@@ -1,7 +1,7 @@
 import Title from "../Title/Title";
 
-const dashboard = () => {
-  return <Title> Dashboard </Title>;
+const checkout = () => {
+  return <Title> Checkout </Title>;
 };
 
-export default dashboard;
+export default checkout;

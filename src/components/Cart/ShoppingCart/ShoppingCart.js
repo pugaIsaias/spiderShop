@@ -5,11 +5,19 @@ const ShoppingCart = (props) => {
   //TODO: set a state for localStorage
   // Make the state length a visual number
   // Make shoppying cart icon and counter
-  const [cart, setcart] = LocalStatehooks("cart");
+  const [cart, _setcart] = LocalStatehooks("cart");
 
+  let readable = JSON.parse(cart);
   return (
     <>
-      <p>length: {cart}</p>
+      <p>
+        Items on Cart : {readable.length}
+        {readable.map((course) => (
+          <div>
+            <img src={course.banner} alt="" /> {course.name}
+          </div>
+        ))}
+      </p>
     </>
   );
 };

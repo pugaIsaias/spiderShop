@@ -1,8 +1,8 @@
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import About from "./components/About/About";
+import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 import Courses from "./components/Courses/Courses";
-import Dashboard from "./components/Dashboard/Dashboard";
 import Layout from "./containers/Layout/Layout";
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/courses" component={Courses} />
+          <Route path="/checkout" component={Checkout} />
+          <Route path="/" exact component={Courses} />
+          <Route path="/cart" component={Cart} />
         </Switch>
       </Layout>
     </>

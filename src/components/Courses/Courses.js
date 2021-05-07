@@ -33,18 +33,19 @@ const Courses = () => {
   return (
     <>
       <Title> Courses </Title>
-
-      <div className={classes.Gallery}>
-        {courseList.map((course) => (
-          <Course
-            key={course.id}
-            name={course.name}
-            description={course.description}
-            price={course.price}
-            banner={course.banner}
-            link={course.link}
-          />
-        ))}
+      <div className={classes.alignCenter}>
+        <div className={classes.Gallery}>
+          {courseList.map((course) => (
+            <Course
+              key={course.id}
+              name={course.name}
+              description={course.description}
+              price={course.price}
+              banner={course.banner}
+              link={course.link}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

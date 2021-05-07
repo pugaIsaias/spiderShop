@@ -19,6 +19,7 @@ const Courses = () => {
         fragment.name = element.name;
         fragment.price = element.price;
         fragment.banner = element.banner;
+        fragment.description = element.description;
         fragment.link = element.link;
         courseData.push(fragment);
       });

@@ -14,9 +14,11 @@ const Course = (props) => {
       <h3>{props.name}</h3>
       <p>{props.description}</p>
 
-      <div>
-        <p>{"Q" + props.price}</p>
-        <button onClick={() => addToCart(props)}>BUY</button>
+      <div className={classes.noBottomMargin}>
+        <p className={classes.price}>{"Q" + props.price}</p>
+        <button className={classes.cardButton} onClick={() => addToCart(props)}>
+          BUY
+        </button>
       </div>
     </div>
   );

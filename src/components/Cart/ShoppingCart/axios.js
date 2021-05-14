@@ -1,8 +1,8 @@
 import axios from "axios";
-import config from "../../../config/server-config";
+import { config } from "../../../config/Contants";
 
 const instance = axios.create({
-  baseURL: config.scheme + "://" + config.server + ":" + config.db_port,
+  baseURL: config.mysqlURL,
 });
 
 export default instance;
